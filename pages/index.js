@@ -1,3 +1,4 @@
+import { FeaturedPosts } from '../sections/index';
 import Head from 'next/head'
 import { Categories, PostCard, PostWidget, Header } from '@/components'
 import { getPosts } from '@/services'
@@ -6,8 +7,9 @@ export default function Home({ posts }) {
   return (
     <main className="container mx-auto px-10 mb-8">
       <Head>
-        <title>Supratim's Blog</title>
+        <title>Techno Maniac</title>
       </Head>
+      <FeaturedPosts />
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
         <div className='lg:col-span-8 col-span-1'>
           {
