@@ -30,7 +30,8 @@ const PostDetail = ({ post }) => {
         return <h4 key={index} className="text-md font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
       case 'image':
         return (
-          <img
+          <Image
+            loader={grpahCMSImageLoader}
             key={index}
             alt={obj.title}
             height={obj.height}
